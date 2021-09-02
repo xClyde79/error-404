@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .error-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .ops-message {
+            position: absolute;
+            font-size: 20px;
+            top: 0;
+            left: 0;
+            margin: 30px 50px;
+        }
+
+         .p-404{
+            padding: 10px;
+            opacity: 0.5;
+            position: absolute;
+            font-size: 80px;
+            color: rgb(255, 254, 254);
+            border: 3px solid rgb(73, 73, 73);
+            background-color: rgb(116, 116, 116);
+            border-radius: 3px;
+            box-shadow: 4px 2px black;
+        }
+
+        img {
+            z-index: 1;
+            height: 55%;
+            width: 55%;
+        }
+
+        .error-container__img {
+            position: relative;
+            width: 40%;
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-container__message {
+            width: 50%;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-title , .message-content {
+            padding: 30px;
+        }
+
+        .message-title {
+            font-size: 45px;
+            line-height: 60px;
+        }
+
+        .message-content {
+            font-size: 15px;
+            line-height: 35px;
+        }
+
+        .button {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        button {
+            border-radius: 3px;
+            background-color: black;
+            padding: 20px 30px;
+            font-size: 10px; 
+        }
+
+        @media (min-width: 1400px) {
+
+            .message-title {
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            .message-content {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 12px; 
+            }
+
+        }
+
+         @media (max-width: 929px) {
+
+             * {
+                 overflow: auto;
+             }
+             
+            .error-container {
+                display: block;
+            }
+
+            img {
+            height: 30%;
+            width: 30%;
+        }
+
+            .ops-message {
+            position: relative;
+            font-size: 12px;
+            top: 0;
+            left: 0;
+            margin: 20px 40px;
+            }    
+
+            .message-title , .message-content {
+                padding: 5px;
+            }
+
+            
+            .message-title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .message-content {
+                font-size: 10px;
+                line-height: 35px;
+            }
+
+            .error-container__img {
+                width: 100%;
+            }
+
+            .error-container__message {
+                width: 100%;
+            }
+
+            .button {
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+            button {
+                padding: 10px 15px;
+                font-size: 8px; 
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <p class="ops-message">¡OPS! PAGE NOT FOUND</p>
+        <div class="error-container__img">
+            <img src="error-404.png"></img>
+            <p class="p-404">404</p>
+        </div>
+       
+        <div class="error-container__message">
+            <div>
+                <H1 class="message-title">I have bad news <br> for you</H1>
+                <p class="message-content">
+                The page you are looking <br>
+                for might be removed or is <br>
+                temporaly unavaible
+                </p>
+                <div class="button">
+                    <button><a href="#">BACK TO HOMEPAGE</a></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
